@@ -1,6 +1,4 @@
-/*
-  Be sure to import in all of the action types from `../actions`
-*/
+import { FETCHING_SMURFS_START, FETCHING_SMURFS_SUCCESS, FETCHING_SMURFS_ERROR } from '../actions'
 
 /*
  Your initial/default state for this project could *Although does not have to* look a lot like this
@@ -13,6 +11,13 @@
    error: null
  }
 */
+
+const intialState = {
+  smurfs: [],
+  fetchingSmurfs: false,
+  addingSmurfs: false,
+  error: ''
+}
 
 /*
   You'll only need one smurf reducer for this project.
